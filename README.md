@@ -37,10 +37,15 @@ Each table has the following keys:
 | noscroll    | boolean    | no       | If `syntax=true`, whether the user does not need to scroll to see the syntax.          |
 | interactive | boolean    | no       | Whether the landing page includes a widget for interacting with the language directly. |
 
-- `url` is required; if a language does not have an authoritative website, then
-  it is not to be included.
+- For a landing page to qualify as `syntax=true`, the intention should be to
+  showcase the syntax itself, rather than being a part of the design of the
+  page.
+- `url` is required. The landing page should be for the language specifically.
+  If a language does not have an authoritative website, then it is not to be
+  included.
 - The most simple form of a URL that will sucessfully navigate to the langauge's
   landing page is preferred. For example, `toml.io` versus `https://toml.io/`.
 - `noscroll` is based on a reasonable standard screen size of 1920x1080 pixels
   with a Device Pixel Ratio of 1.
-- `interactive=true` usually implies `syntax=true`.
+- An interactive widget is usually prefilled with an example, so
+  `interactive=true` usually implies `syntax=true`.
