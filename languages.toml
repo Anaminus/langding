@@ -3,7 +3,7 @@ name = "Go"
 url = "go.dev"
 date = 2025-03-29
 syntax = true
-scroll = true
+noscroll = false
 interactive = true
 
 [toml]
@@ -11,5 +11,5 @@ name = "TOML"
 url = "toml.io"
 date = 2025-03-29
 syntax = true
-scroll = false
+noscroll = true
 interactive = false
