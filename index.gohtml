@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Langding pages</title>
+	<style>
+		:root {
+			--bg: #FFF;
+			--text: #111;
+			--link: #08D;
+			--border: #CCC;
+			--very-yes: #CFC;
+			--yes: #EFE;
+			--maybe: #FFE;
+			--no: #FEE;
+		}
+		@media (prefers-color-scheme: dark) {
+			:root {
+				--bg: #111;
+				--text: #EEE;
+				--link: #0BF;
+				--border: #666;
+				--very-yes: #060;
+				--yes: #040;
+				--maybe: #440;
+				--no: #400;
+			}
+		}
+		html {
+			background-color: var(--bg);
+			color: var(--text);
+			font-size: 20px;
+		}
+		body {
+			margin: 0.5rem;
+			display: flex;
+			flex-direction: column;
+		}
+		main {
+			display: flex;
+			justify-content: center;
+		}
+		article {
+			max-width: 40em;
+		}
+		a {
+			color: var(--link);
+			text-decoration: none;
+		}
+		table {
+			border-collapse: collapse;
+			border: 1px solid var(--border);
+			text-align: center;
+		}
+		table th, table td {
+			padding: 0.25em 0.5em;
+			border: 1px solid var(--border);
+		}
+		table .stx-yes {
+			background-color: var(--yes);
+		}
+		table .stx-yes.int {
+			background-color: var(--very-yes);
+		}
+		table .stx-no {
+			background-color: var(--no);
+		}
+		table .stx-scroll {
+			background-color: var(--maybe);
+		}
+		.publication {
+			margin-left: auto;
+		}
+		.publication svg {
+			height: 14px;
+			width: 14px;
+		}
+		.publication svg path {
+			fill: var(--link);
+		}
+	</style>
+</head>
+<body>
+<main>
+	<article>
+		<h1>Langding pages</h1>
+		<p><small><i>Open website. No syntax. Close website.</i></small></p>
+		<p>Programming languages that include the syntax on their landing page.</p>
+		<table>
+			<thead>
+				<tr>
+					<th>Language</th>
+					<th>Has syntax</th>
+				</tr>
+			</thead>
+			<tbody>
+			{{- range . }}
+				{{- $syntax := "no" }}
+				{{- if .Syntax }}
+					{{- if .NoScroll }}
+						{{- $syntax = "yes" }}
+					{{- else }}
+						{{- $syntax = "scroll" }}
+					{{- end }}
+				{{- end }}
+				<tr>
+					<td><a href="https://{{.URL}}">{{.Name}}</a></td>
+					<td class="stx-{{$syntax}}{{if .Interactive}} int{{end}}" title="Last checked {{.Date.Format "2006-01-02"}}">
+						{{- if .Syntax -}}
+							Yes
+							{{- if not .NoScroll -}}
+								, must scroll
+							{{- end -}}
+							{{- if .Interactive -}}
+								, interactive
+							{{- end -}}
+						{{- else -}}
+							No
+							{{- if .Interactive -}}
+								, interactive
+							{{- end -}}
+						{{- end -}}
+					</td>
+				</tr>
+			{{- end }}
+			</tbody>
+		</table>
+		<p>Scrolling is based on a reasonable standard screen size of 1920x1080
+		pixels with a Device Pixel Ratio of 1.</p>
+	</article>
+</main>
+<span class="publication"><svg viewBox="0 0 7 7" height="7" width="7"><path d="M2 0V1H1V4H2V7H3V6H4V7H5V4H6V1H5V0H4V1H3V0zM2 2H3V3H2zM4 2H5V3H4z"></path></svg> <a href="https://anaminus.github.io">Anaminus</a></span>
+</body>
+</html>
