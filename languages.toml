@@ -3,7 +3,7 @@ name = "Ada"
 url = "adaic.org"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [aldor]
@@ -11,7 +11,7 @@ name = "Aldor"
 url = "aldor.org"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [apl]
@@ -35,7 +35,7 @@ name = "AutoIt"
 url = "autoitscript.com"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [ballerina]
@@ -51,7 +51,7 @@ name = "Bash"
 url = "gnu.org/software/bash"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [beanshell]
@@ -59,7 +59,7 @@ name = "BeanShell"
 url = "github.com/beanshell/beanshell"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [borgo]
@@ -75,7 +75,7 @@ name = "C"
 url = "c-language.org"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [cpp]
@@ -83,7 +83,7 @@ name = "C++"
 url = "isocpp.org"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [csharp]
@@ -91,7 +91,7 @@ name = "C#"
 url = "learn.microsoft.com/en-us/dotnet/csharp"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [clarion]
@@ -99,7 +99,7 @@ name = "Clarion"
 url = "softvelocity.com"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [clean]
@@ -107,7 +107,7 @@ name = "Clean"
 url = "wiki.clean.cs.ru.nl"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [clojure]
@@ -115,7 +115,7 @@ name = "Clojure"
 url = "clojure.org"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [clu]
@@ -123,7 +123,7 @@ name = "CLU"
 url = "pmg.csail.mit.edu/CLU.html"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [cobra]
@@ -140,7 +140,7 @@ url = "common-lisp.net"
 date = 2025-03-29
 # Syntax is visible in background image, which is design rather than showcase.
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [crystal]
@@ -164,7 +164,7 @@ name = "Cython"
 url = "cython.org"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [d]
@@ -188,7 +188,7 @@ name = "Delphi"
 url = "embarcadero.com/products/delphi"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [dylan]
@@ -196,7 +196,7 @@ name = "Dylan"
 url = "opendylan.org"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [eiffel]
@@ -229,7 +229,7 @@ url = "openeuphoria.org"
 date = 2025-03-29
 # Section changes on each visit, and does not always display syntax.
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [factor]
@@ -261,7 +261,7 @@ name = "Fortran"
 url = "fortran-lang.org"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [freebasic]
@@ -285,7 +285,7 @@ name = "GLBasic"
 url = "glbasic.com"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [gleam]
@@ -309,7 +309,7 @@ name = "Gosu"
 url = "gosu-lang.github.io"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [groovy]
@@ -317,7 +317,7 @@ name = "Groovy"
 url = "groovy-lang.org"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [harbour]
@@ -325,7 +325,7 @@ name = "Harbour"
 url = "harbour.github.io"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [haskell]
@@ -349,7 +349,7 @@ name = "Io"
 url = "iolanguage.org"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [j]
@@ -357,7 +357,7 @@ name = "J"
 url = "jsoftware.com"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [janet]
@@ -373,7 +373,7 @@ name = "Java"
 url = "oracle.com/java"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [javascript]
@@ -381,7 +381,7 @@ name = "JavaScript"
 url = "ecma-international.org/publications-and-standards/standards/ecma-262"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [jq]
@@ -389,7 +389,7 @@ name = "jq"
 url = "jqlang.org"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [julia]
@@ -397,7 +397,7 @@ name = "Julia"
 url = "julialang.org"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [kotlin]
@@ -413,7 +413,7 @@ name = "Koto"
 url = "koto.dev"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [ksh]
@@ -421,7 +421,7 @@ name = "ksh"
 url = "kornshell.com"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [libertybasic]
@@ -429,7 +429,7 @@ name = "Liberty BASIC"
 url = "libertybasic.com"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [logtalk]
@@ -437,7 +437,7 @@ name = "Logtalk"
 url = "logtalk.org"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [lua]
@@ -445,7 +445,7 @@ name = "Lua"
 url = "lua.org"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [luau]
@@ -461,7 +461,7 @@ name = "Module-2"
 url = "modula2.org"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [modula3]
@@ -469,7 +469,7 @@ name = "Modula-3"
 url = "modula3.org"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [nim]
@@ -485,7 +485,7 @@ name = "Oberon"
 url = "projectoberon.net"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [objectivec]
@@ -493,7 +493,7 @@ name = "Objective-C"
 url = "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [ocaml]
@@ -533,7 +533,7 @@ name = "Perl"
 url = "perl.org"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [php]
@@ -541,7 +541,7 @@ name = "PHP"
 url = "php.net"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [powershell]
@@ -549,7 +549,7 @@ name = "PowerShell"
 url = "microsoft.com/powershell"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [purebasic]
@@ -557,7 +557,7 @@ name = "PureBasic"
 url = "purebasic.com"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [python]
@@ -573,7 +573,7 @@ name = "R"
 url = "r-project.org"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [racket]
@@ -605,7 +605,7 @@ name = "rhai"
 url = "rhai.rs"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [ring]
@@ -613,7 +613,7 @@ name = "Ring"
 url = "ring-lang.github.io"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [roc]
@@ -637,7 +637,7 @@ name = "Rust"
 url = "rust-lang.org"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [slang]
@@ -661,7 +661,7 @@ name = "Scheme"
 url = "scheme.org"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [seed7]
@@ -669,7 +669,7 @@ name = "Seed7"
 url = "seed7.sourceforge.net"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [smallbasic]
@@ -685,7 +685,7 @@ name = "Snobol"
 url = "regressive.org/snobol4"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [sml]
@@ -693,7 +693,7 @@ name = "Standard ML"
 url = "smlfamily.github.io"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [swift]
@@ -709,7 +709,7 @@ name = "Tcl"
 url = "tcl-lang.org"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [toml]
@@ -733,7 +733,7 @@ name = "Visual Basic"
 url = "learn.microsoft.com/en-us/previous-versions/visualstudio/visual-basic-6/visual-basic-6.0-documentation"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [vbnet]
@@ -741,7 +741,7 @@ name = "Visual Basic .NET"
 url = "docs.microsoft.com/dotnet/visual-basic"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [vfoxpro]
@@ -749,7 +749,7 @@ name = "Visual FoxPro"
 url = "msdn.microsoft.com/vfoxpro"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [visualprolog]
@@ -757,7 +757,7 @@ name = "Visual Prolog"
 url = "www.visual-prolog.com"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [wolframlanguage]
@@ -781,7 +781,7 @@ name = "XQuery"
 url = "w3.org/XML/Query"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
 
 [yabasic]
@@ -805,5 +805,5 @@ name = "Zsh"
 url = "zsh.org"
 date = 2025-03-29
 syntax = false
-noscroll = true
+noscroll = false
 interactive = false
