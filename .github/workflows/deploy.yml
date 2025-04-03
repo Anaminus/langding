@@ -1,0 +1,45 @@
+name: "Deploy pages"
+
+on:
+  push:
+    branches:
+    - "master"
+  workflow_dispatch: {}
+
+jobs:
+  "deploy":
+    name: "Build and deploy"
+    timeout-minutes: 10
+    runs-on: "ubuntu-latest"
+    steps:
+    - name: "Checkout source"
+      uses: "actions/checkout@v4"
+      with:
+        ref: "master"
+        path: "langding"
+
+    - name: "Checkout pages"
+      uses: "actions/checkout@v4"
+      with:
+        ref: "gh-pages"
+        path: "pages"
+
+    - name: "Clear pages"
+      # Remove everything except hidden files (.git).
+      run: |
+        cd "pages"
+        rm --recursive --force *
+
+    - name: "Generate pages"
+      run: |
+        go run *.go langding/index.gohtml pages/index.html
+
+    - name: "Commit and push pages"
+      run: |
+        cd "pages"
+        git config user.email 'github-actions@github.com'
+        git config user.name 'github-actions'
+        git add -A
+        git commit -m 'Update pages.'
+        git push
+      continue-on-error: true
