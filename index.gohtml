@@ -106,7 +106,7 @@
 				{{- end }}
 				<tr>
 					<td><a href="https://{{.URL}}">{{.Name}}</a></td>
-					<td class="stx-{{$syntax}}{{if .Interactive}} int{{end}}" title="Last checked {{.Date.Format "2006-01-02"}}">
+					<td class="stx-{{$syntax}}{{if .Interactive}} int{{end}}" title="Last checked {{.Date}}">
 						{{- if .Syntax -}}
 							Yes
 							{{- if not .NoScroll -}}

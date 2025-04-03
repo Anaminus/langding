@@ -4,44 +4,40 @@ import (
 	"fmt"
 	"html/template"
 	"os"
-	"time"
-
-	"github.com/BurntSushi/toml"
+	"slices"
+	"strings"
 )
 
 type Entry struct {
-	Name        string    `toml:"name"`
-	URL         string    `toml:"url"`
-	Date        time.Time `toml:"date"`
-	Syntax      bool      `toml:"syntax"`
-	NoScroll    bool      `toml:"noscroll"`
-	Interactive bool      `toml:"interactive"`
+	Name        string
+	URL         string
+	Date        string
+	Syntax      bool
+	NoScroll    bool
+	Interactive bool
 }
 
-var Languages = map[string]Entry{}
-
 func main() {
-	if len(os.Args) < 4 {
+	if len(os.Args) < 3 {
 		fmt.Println(`Usage:
 
-go run generate.go [languages.toml] [template.gohtml] [output.html]`)
+go run *.go [template.gohtml] [output.html]`)
 		return
 	}
 
-	_, err := toml.DecodeFile(os.Args[1], &Languages)
-	if err != nil {
-		panic(err)
-	}
+	tmpl := template.Must(template.New("langding").ParseFiles(os.Args[1]))
 
-	tmpl := template.Must(template.New("langding").ParseFiles("index.gohtml"))
-
-	out, err := os.Create(os.Args[3])
+	out, err := os.Create(os.Args[2])
 	if err != nil {
 		panic(err)
 	}
 	defer out.Close()
 
-	err = tmpl.ExecuteTemplate(out, os.Args[2], Languages)
+	slices.SortStableFunc(Languages, func(a, b Entry) int {
+		return strings.Compare(a.Name, b.Name)
+	})
+
+	err = tmpl.ExecuteTemplate(out, os.Args[1], Languages)
 	if err != nil {
 		panic(err)
 	}
