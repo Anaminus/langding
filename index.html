@@ -4,7 +4,507 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Langding pages</title>
+	<style>
+		:root {
+			--bg: #FFF;
+			--text: #111;
+			--link: #08D;
+			--border: #CCC;
+			--very-yes: #CFC;
+			--yes: #EFE;
+			--maybe: #FFE;
+			--no: #FEE;
+		}
+		@media (prefers-color-scheme: dark) {
+			:root {
+				--bg: #111;
+				--text: #EEE;
+				--link: #0BF;
+				--border: #666;
+				--very-yes: #060;
+				--yes: #040;
+				--maybe: #440;
+				--no: #400;
+			}
+		}
+		html {
+			background-color: var(--bg);
+			color: var(--text);
+			font-size: 20px;
+		}
+		body {
+			margin: 0.5rem;
+			display: flex;
+			flex-direction: column;
+		}
+		main {
+			display: flex;
+			justify-content: center;
+		}
+		article {
+			max-width: 40em;
+		}
+		a {
+			color: var(--link);
+			text-decoration: none;
+		}
+		table {
+			border-collapse: collapse;
+			border: 1px solid var(--border);
+			text-align: center;
+		}
+		table th, table td {
+			padding: 0.25em 0.5em;
+			border: 1px solid var(--border);
+		}
+		table .stx-yes {
+			background-color: var(--yes);
+		}
+		table .stx-yes.int {
+			background-color: var(--very-yes);
+		}
+		table .stx-no {
+			background-color: var(--no);
+		}
+		table .stx-scroll {
+			background-color: var(--maybe);
+		}
+		.publication {
+			margin-left: auto;
+		}
+		.publication svg {
+			height: 14px;
+			width: 14px;
+		}
+		.publication svg path {
+			fill: var(--link);
+		}
+	</style>
 </head>
 <body>
+<main>
+	<article>
+		<h1>Langding pages</h1>
+		<p><small><i>Open website. No syntax. Close website.</i></small></p>
+		<p>Programming languages that include the syntax on their landing page.</p>
+		<table>
+			<thead>
+				<tr>
+					<th>Language</th>
+					<th>Has syntax</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><a href="https://aplwiki.com">APL</a></td>
+					<td class="stx-yes" title="Last checked 2025-03-29">Yes</td>
+				</tr>
+				<tr>
+					<td><a href="https://adaic.org">Ada</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://aldor.org">Aldor</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://autohotkey.com">AutoHotKey</a></td>
+					<td class="stx-scroll" title="Last checked 2025-03-29">Yes, must scroll</td>
+				</tr>
+				<tr>
+					<td><a href="https://autoitscript.com">AutoIt</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://ballerina.io">Ballerina</a></td>
+					<td class="stx-scroll" title="Last checked 2025-03-29">Yes, must scroll</td>
+				</tr>
+				<tr>
+					<td><a href="https://gnu.org/software/bash">Bash</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://github.com/beanshell/beanshell">BeanShell</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://borgo-lang.github.io">Borgo</a></td>
+					<td class="stx-yes int" title="Last checked 2025-03-29">Yes, interactive</td>
+				</tr>
+				<tr>
+					<td><a href="https://c-language.org">C</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://learn.microsoft.com/en-us/dotnet/csharp">C#</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://isocpp.org">C&#43;&#43;</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://pmg.csail.mit.edu/CLU.html">CLU</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://softvelocity.com">Clarion</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://wiki.clean.cs.ru.nl">Clean</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://clojure.org">Clojure</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://cobra-language.com">Cobra</a></td>
+					<td class="stx-yes" title="Last checked 2025-03-29">Yes</td>
+				</tr>
+				<tr>
+					<td><a href="https://common-lisp.net">Common Lisp</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://crystal-lang.org">Crystal</a></td>
+					<td class="stx-yes" title="Last checked 2025-03-29">Yes</td>
+				</tr>
+				<tr>
+					<td><a href="https://curry-lang.org">Curry</a></td>
+					<td class="stx-yes" title="Last checked 2025-03-29">Yes</td>
+				</tr>
+				<tr>
+					<td><a href="https://cython.org">Cython</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://dlang.org">D</a></td>
+					<td class="stx-yes int" title="Last checked 2025-03-29">Yes, interactive</td>
+				</tr>
+				<tr>
+					<td><a href="https://dart.dev">Dart</a></td>
+					<td class="stx-scroll int" title="Last checked 2025-03-29">Yes, must scroll, interactive</td>
+				</tr>
+				<tr>
+					<td><a href="https://embarcadero.com/products/delphi">Delphi</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://opendylan.org">Dylan</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://eiffel.org">Eiffel</a></td>
+					<td class="stx-yes" title="Last checked 2025-03-29">Yes</td>
+				</tr>
+				<tr>
+					<td><a href="https://elixir-lang.org">Elixir</a></td>
+					<td class="stx-yes" title="Last checked 2025-03-29">Yes</td>
+				</tr>
+				<tr>
+					<td><a href="https://erlang.org">Erlang</a></td>
+					<td class="stx-yes" title="Last checked 2025-03-29">Yes</td>
+				</tr>
+				<tr>
+					<td><a href="https://openeuphoria.org">Euphoria</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://fsharp.org">F#</a></td>
+					<td class="stx-scroll" title="Last checked 2025-03-29">Yes, must scroll</td>
+				</tr>
+				<tr>
+					<td><a href="https://factorcode.org">Factor</a></td>
+					<td class="stx-yes" title="Last checked 2025-03-29">Yes</td>
+				</tr>
+				<tr>
+					<td><a href="https://fennel-lang.org">Fennel</a></td>
+					<td class="stx-yes int" title="Last checked 2025-03-29">Yes, interactive</td>
+				</tr>
+				<tr>
+					<td><a href="https://forth-standard.org">Forth</a></td>
+					<td class="stx-yes" title="Last checked 2025-03-29">Yes</td>
+				</tr>
+				<tr>
+					<td><a href="https://fortran-lang.org">Fortran</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://freebasic.net">FreeBasic</a></td>
+					<td class="stx-yes" title="Last checked 2025-03-29">Yes</td>
+				</tr>
+				<tr>
+					<td><a href="https://glbasic.com">GLBasic</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://gleam.run">Gleam</a></td>
+					<td class="stx-yes" title="Last checked 2025-03-29">Yes</td>
+				</tr>
+				<tr>
+					<td><a href="https://go.dev">Go</a></td>
+					<td class="stx-scroll int" title="Last checked 2025-03-29">Yes, must scroll, interactive</td>
+				</tr>
+				<tr>
+					<td><a href="https://gosu-lang.github.io">Gosu</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://groovy-lang.org">Groovy</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://harbour.github.io">Harbour</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://haskell.org">Haskell</a></td>
+					<td class="stx-yes" title="Last checked 2025-03-29">Yes</td>
+				</tr>
+				<tr>
+					<td><a href="https://haxe.org">Haxe</a></td>
+					<td class="stx-scroll int" title="Last checked 2025-03-29">Yes, must scroll, interactive</td>
+				</tr>
+				<tr>
+					<td><a href="https://iolanguage.org">Io</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://jsoftware.com">J</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://janet-lang.org">Janet</a></td>
+					<td class="stx-scroll int" title="Last checked 2025-03-29">Yes, must scroll, interactive</td>
+				</tr>
+				<tr>
+					<td><a href="https://oracle.com/java">Java</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://ecma-international.org/publications-and-standards/standards/ecma-262">JavaScript</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://julialang.org">Julia</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://kotlinlang.org">Kotlin</a></td>
+					<td class="stx-scroll int" title="Last checked 2025-03-29">Yes, must scroll, interactive</td>
+				</tr>
+				<tr>
+					<td><a href="https://koto.dev">Koto</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://libertybasic.com">Liberty BASIC</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://logtalk.org">Logtalk</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://lua.org">Lua</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://luau.org">Luau</a></td>
+					<td class="stx-scroll" title="Last checked 2025-03-29">Yes, must scroll</td>
+				</tr>
+				<tr>
+					<td><a href="https://modula3.org">Modula-3</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://modula2.org">Module-2</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://nim-lang.org">Nim</a></td>
+					<td class="stx-yes" title="Last checked 2025-03-29">Yes</td>
+				</tr>
+				<tr>
+					<td><a href="https://ocaml.org">OCaml</a></td>
+					<td class="stx-yes" title="Last checked 2025-03-29">Yes</td>
+				</tr>
+				<tr>
+					<td><a href="https://projectoberon.net">Oberon</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html">Objective-C</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://odin-lang.org">Odin</a></td>
+					<td class="stx-yes" title="Last checked 2025-03-29">Yes</td>
+				</tr>
+				<tr>
+					<td><a href="https://opalang.org">Opa</a></td>
+					<td class="stx-scroll" title="Last checked 2025-03-29">Yes, must scroll</td>
+				</tr>
+				<tr>
+					<td><a href="https://remobjects.com/elements/oxygene">Oxygene</a></td>
+					<td class="stx-scroll" title="Last checked 2025-03-29">Yes, must scroll</td>
+				</tr>
+				<tr>
+					<td><a href="https://php.net">PHP</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://perl.org">Perl</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://microsoft.com/powershell">PowerShell</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://purebasic.com">PureBasic</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://python.org">Python</a></td>
+					<td class="stx-yes" title="Last checked 2025-03-29">Yes</td>
+				</tr>
+				<tr>
+					<td><a href="https://r-project.org">R</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://racket-lang.org">Racket</a></td>
+					<td class="stx-yes" title="Last checked 2025-03-29">Yes</td>
+				</tr>
+				<tr>
+					<td><a href="https://raku.org">Rake</a></td>
+					<td class="stx-yes" title="Last checked 2025-03-29">Yes</td>
+				</tr>
+				<tr>
+					<td><a href="https://rebol.com">Rebol</a></td>
+					<td class="stx-scroll" title="Last checked 2025-03-29">Yes, must scroll</td>
+				</tr>
+				<tr>
+					<td><a href="https://ring-lang.github.io">Ring</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://roc-lang.org">Roc</a></td>
+					<td class="stx-yes int" title="Last checked 2025-03-29">Yes, interactive</td>
+				</tr>
+				<tr>
+					<td><a href="https://ruby-lang.org">Ruby</a></td>
+					<td class="stx-yes" title="Last checked 2025-03-29">Yes</td>
+				</tr>
+				<tr>
+					<td><a href="https://rust-lang.org">Rust</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://jedsoft.org/slang">S-Lang</a></td>
+					<td class="stx-yes" title="Last checked 2025-03-29">Yes</td>
+				</tr>
+				<tr>
+					<td><a href="https://scala-lang.org">Scala</a></td>
+					<td class="stx-yes" title="Last checked 2025-03-29">Yes</td>
+				</tr>
+				<tr>
+					<td><a href="https://scheme.org">Scheme</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://seed7.sourceforge.net">Seed7</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://smallbasic-publicwebsite.azurewebsites.net">Small Basic</a></td>
+					<td class="stx-yes" title="Last checked 2025-03-29">Yes</td>
+				</tr>
+				<tr>
+					<td><a href="https://regressive.org/snobol4">Snobol</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://smlfamily.github.io">Standard ML</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://swift.org">Swift</a></td>
+					<td class="stx-yes" title="Last checked 2025-03-29">Yes</td>
+				</tr>
+				<tr>
+					<td><a href="https://toml.io">TOML</a></td>
+					<td class="stx-yes" title="Last checked 2025-03-29">Yes</td>
+				</tr>
+				<tr>
+					<td><a href="https://tcl-lang.org">Tcl</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://vlang.io">V</a></td>
+					<td class="stx-yes" title="Last checked 2025-03-29">Yes</td>
+				</tr>
+				<tr>
+					<td><a href="https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-basic-6/visual-basic-6.0-documentation">Visual Basic</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://docs.microsoft.com/dotnet/visual-basic">Visual Basic .NET</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://msdn.microsoft.com/vfoxpro">Visual FoxPro</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://www.visual-prolog.com">Visual Prolog</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://wolfram.com/language">Wolfram Language</a></td>
+					<td class="stx-scroll int" title="Last checked 2025-03-29">Yes, must scroll, interactive</td>
+				</tr>
+				<tr>
+					<td><a href="https://wren.io">Wren</a></td>
+					<td class="stx-yes" title="Last checked 2025-03-29">Yes</td>
+				</tr>
+				<tr>
+					<td><a href="https://w3.org/XML/Query">XQuery</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://2484.de/yabasic">Yabasic</a></td>
+					<td class="stx-scroll" title="Last checked 2025-03-29">Yes, must scroll</td>
+				</tr>
+				<tr>
+					<td><a href="https://ziglang.org">Zig</a></td>
+					<td class="stx-yes" title="Last checked 2025-03-29">Yes</td>
+				</tr>
+				<tr>
+					<td><a href="https://zsh.org">Zsh</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://jqlang.org">jq</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://kornshell.com">ksh</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+				<tr>
+					<td><a href="https://rhai.rs">rhai</a></td>
+					<td class="stx-no" title="Last checked 2025-03-29">No</td>
+				</tr>
+			</tbody>
+		</table>
+		<p>Scrolling is based on a reasonable standard screen size of 1920x1080
+		pixels with a Device Pixel Ratio of 1.</p>
+	</article>
+</main>
+<span class="publication"><svg viewBox="0 0 7 7" height="7" width="7"><path d="M2 0V1H1V4H2V7H3V6H4V7H5V4H6V1H5V0H4V1H3V0zM2 2H3V3H2zM4 2H5V3H4z"></path></svg> <a href="https://anaminus.github.io">Anaminus</a></span>
 </body>
 </html>
