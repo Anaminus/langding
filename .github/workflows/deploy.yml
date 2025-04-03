@@ -32,7 +32,8 @@ jobs:
 
     - name: "Generate pages"
       run: |
-        go run *.go langding/index.gohtml pages/index.html
+        cd "langding"
+        go run *.go index.gohtml ../pages/index.html
 
     - name: "Commit and push pages"
       run: |
