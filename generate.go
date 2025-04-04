@@ -17,6 +17,31 @@ type Entry struct {
 	Interactive bool
 }
 
+func init() {
+	names := map[string]int{}
+	urls := map[string]int{}
+	for _, entry := range Languages {
+		names[entry.Name]++
+		urls[entry.URL]++
+	}
+	var fail bool
+	for name, count := range names {
+		if count > 1 {
+			fmt.Printf("duplicated Name: %s\n", name)
+			fail = true
+		}
+	}
+	for url, count := range urls {
+		if count > 1 {
+			fmt.Printf("duplicated URL: %s\n", url)
+			fail = true
+		}
+	}
+	if fail {
+		panic("failed integrity check")
+	}
+}
+
 func main() {
 	if len(os.Args) < 3 {
 		fmt.Println(`Usage:
