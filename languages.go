@@ -781,6 +781,14 @@ var Languages = []Entry{
 		Interactive: false,
 	},
 	{
+		Name:        "Solidity",
+		URL:         "soliditylang.org",
+		Date:        "2026-02-25",
+		Syntax:      true,
+		NoScroll:    false,
+		Interactive: true,
+	},
+	{
 		Name:        "Standard ML",
 		URL:         "smlfamily.github.io",
 		Date:        "2025-03-29",
