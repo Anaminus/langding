@@ -605,6 +605,14 @@ var Languages = []Entry{
 		Interactive: false,
 	},
 	{
+		Name:        "Om",
+		URL:         "om-language.com",
+		Date:        "2026-02-25",
+		Syntax:      true,
+		NoScroll:    false,
+		Interactive: false,
+	},
+	{
 		Name:        "Opa",
 		URL:         "opalang.org",
 		Date:        "2025-03-29",
